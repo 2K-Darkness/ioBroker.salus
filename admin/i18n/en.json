@@ -1,0 +1,9 @@
+{
+  "Salus iT600 Gateway Configuration": "Salus iT600 Gateway Configuration",
+  "Gateway IP Address": "Gateway IP Address",
+  "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)": "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)",
+  "Gateway EUID": "Gateway EUID",
+  "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker": "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker",
+  "Polling Interval (seconds)": "Polling Interval (seconds)",
+  "Interval between reading status from the gateway (min 10s, recommended 30s)": "Interval between reading status from the gateway (min 10s, recommended 30s)"
+}

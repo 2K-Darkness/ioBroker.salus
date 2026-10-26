@@ -1,0 +1,104 @@
+{
+  "common": {
+    "name": "salus-it600",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial release with full read and write support for SQ610 thermostats, it600WC wiring centers, and UGE600 gateway",
+        "de": "Erstveröffentlichung mit voller Lese- und Schreibunterstützung für SQ610-Thermostate, it600WC-Klemmleisten und das UGE600 Gateway"
+      }
+    },
+    "titleLang": {
+      "en": "Salus iT600 Heating & Gateway",
+      "de": "Salus iT600 Heizung & Gateway"
+    },
+    "desc": {
+      "en": "ioBroker adapter for Salus iT600 smart underfloor heating and UGE600 universal gateway via local API",
+      "de": "ioBroker-Adapter für Salus iT600 Fußbodenheizung und UGE600 Universal Gateway über lokale Schnittstelle"
+    },
+    "authors": [
+      "Dustin Schiffer"
+    ],
+    "keywords": [
+      "salus",
+      "it600",
+      "uge600",
+      "climate",
+      "thermostat",
+      "heating",
+      "fbh",
+      "underfloor"
+    ],
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "salus-it600.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.salus-it600/main/admin/salus-it600.png",
+    "type": "climate-control",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "tier": 3
+  },
+  "native": {
+    "host": "192.168.0.28",
+    "euid": "0000000000000000",
+    "pollInterval": 30
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Gateway connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.lastPoll",
+      "type": "state",
+      "common": {
+        "role": "date",
+        "name": "Timestamp of last poll",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.deviceCount",
+      "type": "state",
+      "common": {
+        "role": "value",
+        "name": "Total discovered devices",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    }
+  ]
+}

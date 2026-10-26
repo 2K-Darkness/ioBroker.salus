@@ -1,0 +1,42 @@
+{
+  "name": "iobroker.salus-it600",
+  "version": "0.1.0",
+  "description": "ioBroker adapter for Salus iT600 smart heating system and UGE600 gateway",
+  "author": "Dustin Schiffer",
+  "contributors": [],
+  "homepage": "https://github.com/ioBroker/ioBroker.salus-it600",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "salus",
+    "it600",
+    "uge600",
+    "thermostat",
+    "climate",
+    "heating",
+    "smartmeter",
+    "underfloor-heating",
+    "fbh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioBroker/ioBroker.salus-it600.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ioBroker/ioBroker.salus-it600/issues"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.2.3"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --version",
+    "start": "node main.js"
+  }
+}

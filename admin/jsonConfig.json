@@ -1,0 +1,35 @@
+{
+  "i18n": true,
+  "type": "panel",
+  "items": {
+    "header": {
+      "type": "header",
+      "text": "Salus iT600 Gateway Configuration",
+      "size": 5
+    },
+    "host": {
+      "type": "text",
+      "label": "Gateway IP Address",
+      "help": "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)",
+      "sm": 12,
+      "md": 6
+    },
+    "euid": {
+      "type": "text",
+      "label": "Gateway EUID",
+      "help": "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker",
+      "sm": 12,
+      "md": 6
+    },
+    "pollInterval": {
+      "type": "number",
+      "label": "Polling Interval (seconds)",
+      "help": "Interval between reading status from the gateway (min 10s, recommended 30s)",
+      "min": 10,
+      "max": 3600,
+      "default": 30,
+      "sm": 12,
+      "md": 6
+    }
+  }
+}
