@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.3 (2026-10-26)
+* (2K-Darkness) Automated release with package provenance via GitHub Actions
+
 ### 0.1.2 (2026-10-26)
 * (2K-Darkness) CI/CD testing pipeline update and package validation
 

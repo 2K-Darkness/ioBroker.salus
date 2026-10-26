@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "news": {
+      "0.1.3": {
+        "en": "Automated release with package provenance via GitHub Actions",
+        "de": "Automatisiertes Release mit Paket-Provenienz über GitHub Actions",
+        "ru": "Автоматический выпуск с подтверждением происхождения пакета через GitHub Actions",
+        "pt": "Lançamento automatizado com proveniência do pacote via GitHub Actions",
+        "nl": "Geautomatiseerde release met pakketherkomst via GitHub Actions",
+        "fr": "Version automatisée avec provenance du package via GitHub Actions",
+        "it": "Versione automatizzata con provenienza del pacchetto tramite GitHub Actions",
+        "es": "Lanzamiento automatizado con procedencia del paquete a través de GitHub Actions",
+        "pl": "Zautomatyzowane wydanie ze sprawdzonym pochodzeniem pakietu przez GitHub Actions",
+        "uk": "Автоматичний випуск із перевіреним походженням пакета через GitHub Actions",
+        "zh-cn": "通过 GitHub Actions 发布的带有包来源验证的自动化版本"
+      },
       "0.1.2": {
         "en": "CI/CD testing pipeline update and package validation",
         "de": "Aktualisierung der CI/CD-Testing-Pipeline und Paketvalidierung",
