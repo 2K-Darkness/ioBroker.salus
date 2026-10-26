@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.2 (2026-10-26)
+* (2K-Darkness) CI/CD testing pipeline update and package validation
+
 ### 0.1.1 (2026-10-26)
 * (2K-Darkness) Repository compliance update (Node.js 22, admin translations, js-controller and admin dependencies)
 

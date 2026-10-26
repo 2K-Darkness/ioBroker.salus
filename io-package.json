@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "news": {
+      "0.1.2": {
+        "en": "CI/CD testing pipeline update and package validation",
+        "de": "Aktualisierung der CI/CD-Testing-Pipeline und Paketvalidierung",
+        "ru": "Обновление конвейера тестирования CI/CD и валидация пакета",
+        "pt": "Atualização do pipeline de teste CI/CD e validação de pacote",
+        "nl": "Update van CI/CD-testpipeline en pakketvalidatie",
+        "fr": "Mise à jour du pipeline de test CI/CD et validation du package",
+        "it": "Aggiornamento della pipeline di test CI/CD e convalida del pacchetto",
+        "es": "Actualización de la canalización de pruebas CI/CD y validación del paquete",
+        "pl": "Aktualizacja potoku testowania CI/CD i walidacja pakietu",
+        "uk": "Оновлення конвеєра тестування CI/CD та валідація пакета",
+        "zh-cn": "CI/CD 测试流程更新和包验证"
+      },
       "0.1.1": {
         "en": "Repository compliance update (Node.js 22, admin translations, js-controller and admin dependencies)",
         "de": "Repository-Konformitätsupdate (Node.js 22, Admin-Übersetzungen, js-controller- und Admin-Abhängigkeiten)",

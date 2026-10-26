@@ -1,6 +1,6 @@
 {
   "name": "iobroker.salus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ioBroker adapter for Salus Smart Home & iT600 heating systems (UGE600 gateway)",
   "author": "2K-Darkness <2K-Darkness@gmx.de>",
   "contributors": [],
@@ -30,14 +30,15 @@
     "@iobroker/adapter-core": "^3.2.3"
   },
   "devDependencies": {
-    "@iobroker/testing": "^6.3.0",
-    "mocha": "^10.8.2"
+    "@iobroker/testing": "^6.3.0"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "scripts": {
-    "test": "node --version",
+    "test:package": "mocha test/package --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:package",
     "start": "node main.js"
   }
 }
