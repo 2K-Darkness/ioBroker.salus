@@ -309,7 +309,7 @@ class SalusIt600Adapter extends utils.Adapter {
         }
 
         await this.ensureState(`${deviceId}.online`, 'Gateway Online', 'boolean', 'indicator.reachable', '', true, false);
-        await this.setStateAsync(`${deviceId}.online`, { val: isOnline, ack: true });
+        await this.setStateAsync(`${deviceId}.online`, { val: true, ack: true });
     }
 
     async ensureState(id, name, type, role, unit, read, write, extra = {}) {
