@@ -1,0 +1,9 @@
+{
+  "Salus iT600 Gateway Configuration": "Конфігурація шлюзу Salus iT600",
+  "Gateway IP Address": "IP-адреса шлюзу",
+  "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)": "IP-адреса вашого шлюзу Salus UGE600 (наприклад, 192.168.0.28)",
+  "Gateway EUID": "EUID шлюзу",
+  "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker": "Зазвичай 0000000000000000 у локальному режимі або 16-значний шістнадцятковий код із наклейки",
+  "Polling Interval (seconds)": "Інтервал опитування (секунди)",
+  "Interval between reading status from the gateway (min 10s, recommended 30s)": "Інтервал зчитування стану зі шлюзу (мін. 10с, рекомендовано 30с)"
+}

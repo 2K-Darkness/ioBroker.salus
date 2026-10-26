@@ -107,4 +107,8 @@ Because this adapter follows official ioBroker roles:
 
 ## License
 
-MIT License - Copyright (c) 2026 2K-Darkness
+MIT License
+
+Copyright (c) 2026 2K-Darkness <2K-Darkness@gmx.de>
+
+See [LICENSE](LICENSE) for full license text.

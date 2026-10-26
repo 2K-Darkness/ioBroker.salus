@@ -1,0 +1,9 @@
+{
+  "Salus iT600 Gateway Configuration": "Salus iT600 网关配置",
+  "Gateway IP Address": "网关 IP 地址",
+  "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)": "您的 Salus UGE600 网关 IP 地址（例如 192.168.0.28）",
+  "Gateway EUID": "网关 EUID",
+  "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker": "本地 Wi-Fi 模式下通常为 0000000000000000，或网关标签上的 16 位十六进制代码",
+  "Polling Interval (seconds)": "轮询间隔（秒）",
+  "Interval between reading status from the gateway (min 10s, recommended 30s)": "从网关读取状态的间隔（最短 10 秒，建议 30 秒）"
+}

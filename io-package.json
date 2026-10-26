@@ -5,19 +5,46 @@
     "news": {
       "0.1.0": {
         "en": "Initial release with full read and write support for SQ610 thermostats, it600WC wiring centers, and UGE600 gateway",
-        "de": "Erstveröffentlichung mit voller Lese- und Schreibunterstützung für SQ610-Thermostate, it600WC-Klemmleisten und das UGE600 Gateway"
+        "de": "Erstveröffentlichung mit voller Lese- und Schreibunterstützung für SQ610-Thermostate, it600WC-Klemmleisten und das UGE600 Gateway",
+        "ru": "Первоначальный выпуск с полной поддержкой чтения и записи для термостатов SQ610, центров коммутации it600WC и шлюза UGE600",
+        "pt": "Lançamento inicial com suporte total de leitura e gravação para termostatos SQ610, centros de fiação it600WC e gateway UGE600",
+        "nl": "Eerste release met volledige lees- en schrijfondersteuning voor SQ610-thermostaten, it600WC-bedradingscentra en UGE600-gateway",
+        "fr": "Version initiale avec prise en charge complète de la lecture et de l'écriture pour les thermostats SQ610, les centres de câblage it600WC et la passerelle UGE600",
+        "it": "Versione iniziale con supporto completo di lettura e scrittura per termostati SQ610, centri di cablaggio it600WC e gateway UGE600",
+        "es": "Versión inicial con soporte completo de lectura y escritura para termostatos SQ610, centros de cableado it600WC y puerta de enlace UGE600",
+        "pl": "Wersja początkowa z pełną obsługą odczytu i zapisu dla termostatów SQ610, listew sterujących it600WC i bramki UGE600",
+        "uk": "Початковий випуск із повною підтримкою читання та запису для термостатів SQ610, комутаційних центрів it600WC та шлюзу UGE600",
+        "zh-cn": "初始版本，完全支持 SQ610 温控器、it600WC 接线盒和 UGE600 网关的读取和写入"
       }
     },
     "titleLang": {
       "en": "Salus Smart Home",
-      "de": "Salus Smart Home"
+      "de": "Salus Smart Home",
+      "ru": "Salus Умный дом",
+      "pt": "Salus Smart Home",
+      "nl": "Salus Smart Home",
+      "fr": "Salus Smart Home",
+      "it": "Salus Smart Home",
+      "es": "Salus Smart Home",
+      "pl": "Salus Smart Home",
+      "uk": "Salus Розумний дім",
+      "zh-cn": "Salus 智能家居"
     },
     "desc": {
-      "en": "ioBroker adapter for Salus Smart Home & iT600 underfloor heating systems via UGE600 universal gateway (local encrypted API)",
-      "de": "ioBroker-Adapter für Salus Smart Home & iT600 Fußbodenheizung über das UGE600 Universal Gateway (lokale verschlüsselte API)"
+      "en": "ioBroker adapter for Salus Smart Home & iT600 heating systems via UGE600 gateway (local encrypted API)",
+      "de": "ioBroker-Adapter für Salus Smart Home & iT600 Fußbodenheizung über das UGE600 Universal Gateway (lokale verschlüsselte API)",
+      "ru": "Адаптер ioBroker для систем отопления Salus Smart Home и iT600 через шлюз UGE600 (локальный зашифрованный API)",
+      "pt": "Adaptador ioBroker para sistemas de aquecimento Salus Smart Home e iT600 via gateway UGE600 (API criptografada local)",
+      "nl": "ioBroker-adapter voor Salus Smart Home & iT600-verwarmingssystemen via UGE600-gateway (lokaal versleutelde API)",
+      "fr": "Adaptateur ioBroker pour les systèmes de chauffage Salus Smart Home et iT600 via la passerelle UGE600 (API cryptée locale)",
+      "it": "Adattatore ioBroker per sistemi di riscaldamento Salus Smart Home e iT600 tramite gateway UGE600 (API crittografata locale)",
+      "es": "Adaptador ioBroker para sistemas de calefacción Salus Smart Home e iT600 a través de la puerta de enlace UGE600 (API cifrada local)",
+      "pl": "Adapter ioBroker do systemów grzewczych Salus Smart Home i iT600 przez bramkę UGE600 (lokalne szyfrowane API)",
+      "uk": "Адаптер ioBroker для систем опалення Salus Smart Home та iT600 через шлюз UGE600 (локальний зашифрований API)",
+      "zh-cn": "通过 UGE600 网关连接 Salus 智能家居和 iT600 供暖系统的 ioBroker 适配器（本地加密 API）"
     },
     "authors": [
-      "2K-Darkness"
+      "2K-Darkness <2K-Darkness@gmx.de>"
     ],
     "keywords": [
       "salus",
@@ -37,6 +64,16 @@
     "type": "climate-control",
     "connectionType": "local",
     "dataSource": "poll",
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.20"
+      }
+    ],
     "adminUI": {
       "config": "json"
     },

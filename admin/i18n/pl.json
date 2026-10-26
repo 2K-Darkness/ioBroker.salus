@@ -1,0 +1,9 @@
+{
+  "Salus iT600 Gateway Configuration": "Konfiguracja bramki Salus iT600",
+  "Gateway IP Address": "Adres IP bramki",
+  "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)": "Adres IP bramki Salus UGE600 (np. 192.168.0.28)",
+  "Gateway EUID": "EUID bramki",
+  "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker": "Zwykle 0000000000000000 w trybie lokalnym lub 16-znakowy kod szesnastkowy z naklejki",
+  "Polling Interval (seconds)": "Interwał odpytywania (sekundy)",
+  "Interval between reading status from the gateway (min 10s, recommended 30s)": "Interwał odczytu stanu z bramki (min. 10s, zalecane 30s)"
+}

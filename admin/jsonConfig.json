@@ -11,15 +11,21 @@
       "type": "text",
       "label": "Gateway IP Address",
       "help": "IP address of your Salus UGE600 gateway (e.g. 192.168.0.28)",
+      "xs": 12,
       "sm": 12,
-      "md": 6
+      "md": 6,
+      "lg": 6,
+      "xl": 6
     },
     "euid": {
       "type": "text",
       "label": "Gateway EUID",
       "help": "Usually 0000000000000000 in local Wi-Fi mode or 16-character hex code from the gateway sticker",
+      "xs": 12,
       "sm": 12,
-      "md": 6
+      "md": 6,
+      "lg": 6,
+      "xl": 6
     },
     "pollInterval": {
       "type": "number",
@@ -28,8 +34,11 @@
       "min": 10,
       "max": 3600,
       "default": 30,
+      "xs": 12,
       "sm": 12,
-      "md": 6
+      "md": 6,
+      "lg": 6,
+      "xl": 6
     }
   }
 }

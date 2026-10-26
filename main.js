@@ -54,10 +54,10 @@ class SalusIt600Adapter extends utils.Adapter {
 
     startPolling(intervalSec) {
         if (this.pollTimer) {
-            clearTimeout(this.pollTimer);
+            this.clearTimeout(this.pollTimer);
         }
 
-        this.pollTimer = setTimeout(async () => {
+        this.pollTimer = this.setTimeout(async () => {
             try {
                 await this.pollGateway();
             } catch (err) {
@@ -391,7 +391,7 @@ class SalusIt600Adapter extends utils.Adapter {
     onUnload(callback) {
         try {
             if (this.pollTimer) {
-                clearTimeout(this.pollTimer);
+                this.clearTimeout(this.pollTimer);
                 this.pollTimer = null;
             }
             this.setState('info.connection', { val: false, ack: true });
