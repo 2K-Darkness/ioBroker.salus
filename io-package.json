@@ -1,6 +1,6 @@
 {
   "common": {
-    "name": "salus-it600",
+    "name": "salus",
     "version": "0.1.0",
     "news": {
       "0.1.0": {
@@ -9,15 +9,15 @@
       }
     },
     "titleLang": {
-      "en": "Salus iT600 Heating & Gateway",
-      "de": "Salus iT600 Heizung & Gateway"
+      "en": "Salus Smart Home",
+      "de": "Salus Smart Home"
     },
     "desc": {
-      "en": "ioBroker adapter for Salus iT600 smart underfloor heating and UGE600 universal gateway via local API",
-      "de": "ioBroker-Adapter für Salus iT600 Fußbodenheizung und UGE600 Universal Gateway über lokale Schnittstelle"
+      "en": "ioBroker adapter for Salus Smart Home & iT600 underfloor heating systems via UGE600 universal gateway (local encrypted API)",
+      "de": "ioBroker-Adapter für Salus Smart Home & iT600 Fußbodenheizung über das UGE600 Universal Gateway (lokale verschlüsselte API)"
     },
     "authors": [
-      "Dustin Schiffer"
+      "2K-Darkness"
     ],
     "keywords": [
       "salus",
@@ -31,9 +31,9 @@
     ],
     "platform": "Javascript/Node.js",
     "mode": "daemon",
-    "icon": "salus-it600.png",
+    "icon": "salus.png",
     "enabled": true,
-    "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.salus-it600/main/admin/salus-it600.png",
+    "extIcon": "https://raw.githubusercontent.com/2K-Darkness/ioBroker.salus/main/admin/salus.png",
     "type": "climate-control",
     "connectionType": "local",
     "dataSource": "poll",

@@ -1,12 +1,12 @@
-![Logo](admin/salus-it600.png)
-# ioBroker.salus-it600
+![Logo](admin/salus.png)
+# ioBroker.salus
 
-[![NPM version](https://img.shields.io/npm/v/iobroker.salus-it600.svg)](https://www.npmjs.com/package/iobroker.salus-it600)
-[![Downloads](https://img.shields.io/npm/dm/iobroker.salus-it600.svg)](https://www.npmjs.com/package/iobroker.salus-it600)
-![Test and Release](https://github.com/ioBroker/ioBroker.salus-it600/workflows/Test%20and%20Release/badge.svg)
+[![NPM version](https://img.shields.io/npm/v/iobroker.salus.svg)](https://www.npmjs.com/package/iobroker.salus)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.salus.svg)](https://www.npmjs.com/package/iobroker.salus)
+![Test and Release](https://github.com/2K-Darkness/ioBroker.salus/workflows/Test%20and%20Release/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**ioBroker adapter for Salus iT600 smart underfloor heating (FBH) and Universal Gateway (UGE600 / UG600 / UG800).**
+**ioBroker adapter for Salus Smart Home & iT600 underfloor heating (FBH) with Universal Gateway (UGE600 / UG600 / UG800).**
 
 Communicates **100% locally** with the Salus Gateway via encrypted local HTTP API (AES-256-CBC) without relying on cloud services.
 
@@ -47,7 +47,7 @@ Communicates **100% locally** with the Salus Gateway via encrypted local HTTP AP
 
 ## Configuration
 
-In the ioBroker Admin panel for the `salus-it600` instance:
+In the ioBroker Admin panel for the `salus` instance:
 
 | Field | Description | Default |
 |---|---|---|
@@ -59,7 +59,7 @@ In the ioBroker Admin panel for the `salus-it600` instance:
 
 ## State Objects
 
-### Thermostats (`salus-it600.0.thermostats.<uniId>.*`)
+### Thermostats (`salus.0.thermostats.<uniId>.*`)
 
 | State | Type | Role | R/W | Unit | Description |
 |---|---|---|---|---|---|
@@ -74,7 +74,7 @@ In the ioBroker Admin panel for the `salus-it600` instance:
 | `model` | string | `info.model` | R | - | Model identifier (e.g. `SQ610`) |
 | `firmware` | string | `info.firmware` | R | - | Installed firmware version |
 
-### Wiring Centers (`salus-it600.0.wiringCenters.<uniId>.*`)
+### Wiring Centers (`salus.0.wiringCenters.<uniId>.*`)
 
 | State | Type | Role | R/W | Description |
 |---|---|---|---|---|
@@ -97,7 +97,7 @@ Because this adapter follows official ioBroker roles:
 ## Changelog
 
 ### 0.1.0 (2026-10-26)
-* (Dustin Schiffer) Initial release
+* (2K-Darkness) Initial release
 * Direct local AES-256 encrypted communication with Salus UGE600 gateway
 * Auto-detection and full read/write support for SQ610 thermostats
 * Auto-detection of it600WC underfloor heating wiring centers
@@ -107,4 +107,4 @@ Because this adapter follows official ioBroker roles:
 
 ## License
 
-MIT License - Copyright (c) 2026 Dustin Schiffer
+MIT License - Copyright (c) 2026 2K-Darkness

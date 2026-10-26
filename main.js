@@ -7,7 +7,7 @@ class SalusIt600Adapter extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'salus-it600'
+            name: 'salus'
         });
 
         this.gateway = null;
