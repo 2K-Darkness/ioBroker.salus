@@ -30,7 +30,8 @@
     "@iobroker/adapter-core": "^3.2.3"
   },
   "devDependencies": {
-    "@iobroker/testing": "^6.3.0"
+    "@iobroker/testing": "^6.3.0",
+    "mocha": "^10.8.2"
   },
   "engines": {
     "node": ">=22.0.0"

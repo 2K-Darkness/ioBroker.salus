@@ -3,6 +3,5 @@ node_modules/
 .idea/
 *.log
 .DS_Store
-package-lock.json
 *.tgz
 .commitinfo
