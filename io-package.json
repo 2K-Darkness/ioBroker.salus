@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "news": {
+      "0.1.1": {
+        "en": "Repository compliance update (Node.js 22, admin translations, js-controller and admin dependencies)",
+        "de": "Repository-Konformitätsupdate (Node.js 22, Admin-Übersetzungen, js-controller- und Admin-Abhängigkeiten)",
+        "ru": "Обновление соответствия репозиторию (Node.js 22, переводы, зависимости js-controller и admin)",
+        "pt": "Atualização de conformidade do repositório (Node.js 22, traduções, dependências js-controller e admin)",
+        "nl": "Update van repository-naleving (Node.js 22, vertalingen, js-controller- en admin-afhankelijkheden)",
+        "fr": "Mise à jour de conformité du référentiel (Node.js 22, traductions, dépendances js-controller et admin)",
+        "it": "Aggiornamento della conformità del repository (Node.js 22, traduzioni, dipendenze js-controller e admin)",
+        "es": "Actualización de conformidad del repositorio (Node.js 22, traducciones, dependencias js-controller y admin)",
+        "pl": "Aktualizacja zgodności z repozytorium (Node.js 22, tłumaczenia, zależności js-controller i admin)",
+        "uk": "Оновлення відповідності репозиторію (Node.js 22, переклади, залежності js-controller та admin)",
+        "zh-cn": "存储库合规性更新（Node.js 22、翻译、js-controller 和 admin 依赖项）"
+      },
       "0.1.0": {
         "en": "Initial release with full read and write support for SQ610 thermostats, it600WC wiring centers, and UGE600 gateway",
         "de": "Erstveröffentlichung mit voller Lese- und Schreibunterstützung für SQ610-Thermostate, it600WC-Klemmleisten und das UGE600 Gateway",

@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.1 (2026-10-26)
+* (2K-Darkness) Repository compliance update (Node.js 22, admin translations, js-controller and admin dependencies)
+
 ### 0.1.0 (2026-10-26)
 * (2K-Darkness) Initial release
 * Direct local AES-256 encrypted communication with Salus UGE600 gateway
