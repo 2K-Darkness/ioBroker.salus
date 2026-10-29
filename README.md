@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.4 (2026-10-29)
+* (2K-Darkness) Add folder objects for device categories and align RSSI state role to value.rssi for repochecker compliance
+
 ### 0.1.3 (2026-10-26)
 * (2K-Darkness) Automated release with package provenance via GitHub Actions
 

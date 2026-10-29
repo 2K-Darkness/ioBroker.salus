@@ -1,0 +1,2583 @@
+{
+  "salus.0.gateway": {
+    "type": "device",
+    "common": {
+      "name": "Salus Gateway (UGE600)",
+      "role": "info"
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305052171,
+    "_id": "salus.0.gateway",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.gateway.mac": {
+    "type": "state",
+    "common": {
+      "name": "LAN MAC Address",
+      "type": "string",
+      "role": "info.mac",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799682,
+    "_id": "salus.0.gateway.mac",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "00:1e:5e:05:62:d3",
+    "ack": true
+  },
+  "salus.0.gateway.model": {
+    "type": "state",
+    "common": {
+      "name": "Gateway Model",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799707,
+    "_id": "salus.0.gateway.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "UGE600",
+    "ack": true
+  },
+  "salus.0.gateway.online": {
+    "type": "state",
+    "common": {
+      "name": "Gateway Online",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799725,
+    "_id": "salus.0.gateway.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.info": {
+    "_id": "salus.0.info",
+    "type": "channel",
+    "common": {
+      "name": "Information"
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "ts": 1793305070592,
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "user": "system.user.admin"
+  },
+  "salus.0.info.connection": {
+    "_id": "salus.0.info.connection",
+    "type": "state",
+    "common": {
+      "role": "indicator.connected",
+      "name": "Gateway connected",
+      "type": "boolean",
+      "read": true,
+      "write": false,
+      "def": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "ts": 1793305070600,
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "user": "system.user.admin",
+    "val": true,
+    "ack": true
+  },
+  "salus.0.info.deviceCount": {
+    "_id": "salus.0.info.deviceCount",
+    "type": "state",
+    "common": {
+      "role": "value",
+      "name": "Total discovered devices",
+      "type": "number",
+      "read": true,
+      "write": false,
+      "def": 0
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "ts": 1793305070617,
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "user": "system.user.admin",
+    "val": 11,
+    "ack": true
+  },
+  "salus.0.info.lastPoll": {
+    "_id": "salus.0.info.lastPoll",
+    "type": "state",
+    "common": {
+      "role": "date",
+      "name": "Timestamp of last poll",
+      "type": "string",
+      "read": true,
+      "write": false,
+      "def": ""
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "ts": 1793305070607,
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "user": "system.user.admin",
+    "val": "2026-10-29T20:17:00.569Z",
+    "ack": true
+  },
+  "salus.0.thermostats": {
+    "type": "folder",
+    "common": {
+      "name": "Thermostats"
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070773,
+    "_id": "salus.0.thermostats",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904cfa7": {
+    "type": "channel",
+    "common": {
+      "name": "Schlafzimmer (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904cfa7"
+      },
+      "uniId": "001e5e090904cfa7",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071104,
+    "_id": "salus.0.thermostats.001e5e090904cfa7",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904cfa7.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904cfa7_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        },
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904cfa7.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071111,
+    "val": 19.5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071220,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071151,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071176,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 2,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071139,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 57,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071186,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071209,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071198,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071162,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfa7.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071124,
+    "_id": "salus.0.thermostats.001e5e090904cfa7.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 16,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca": {
+    "type": "channel",
+    "common": {
+      "name": "Küche (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904cfca"
+      },
+      "uniId": "001e5e090904cfca",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071462,
+    "_id": "salus.0.thermostats.001e5e090904cfca",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904cfca.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904cfca_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        },
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904cfca.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071469,
+    "val": 21.5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799393,
+    "_id": "salus.0.thermostats.001e5e090904cfca.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071503,
+    "_id": "salus.0.thermostats.001e5e090904cfca.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071529,
+    "_id": "salus.0.thermostats.001e5e090904cfca.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 7,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071492,
+    "_id": "salus.0.thermostats.001e5e090904cfca.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 64,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071542,
+    "_id": "salus.0.thermostats.001e5e090904cfca.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799356,
+    "_id": "salus.0.thermostats.001e5e090904cfca.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071553,
+    "_id": "salus.0.thermostats.001e5e090904cfca.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071517,
+    "_id": "salus.0.thermostats.001e5e090904cfca.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904cfca.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071481,
+    "_id": "salus.0.thermostats.001e5e090904cfca.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156": {
+    "type": "channel",
+    "common": {
+      "name": "GästeWC (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904d156"
+      },
+      "uniId": "001e5e090904d156",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305052193,
+    "_id": "salus.0.thermostats.001e5e090904d156",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904d156.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        },
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904d156_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904d156.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1793019931312,
+    "val": 21.5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019800031,
+    "_id": "salus.0.thermostats.001e5e090904d156.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799823,
+    "_id": "salus.0.thermostats.001e5e090904d156.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799866,
+    "_id": "salus.0.thermostats.001e5e090904d156.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799802,
+    "_id": "salus.0.thermostats.001e5e090904d156.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 62,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799910,
+    "_id": "salus.0.thermostats.001e5e090904d156.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019800006,
+    "_id": "salus.0.thermostats.001e5e090904d156.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799950,
+    "_id": "salus.0.thermostats.001e5e090904d156.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799842,
+    "_id": "salus.0.thermostats.001e5e090904d156.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d156.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799785,
+    "_id": "salus.0.thermostats.001e5e090904d156.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251": {
+    "type": "channel",
+    "common": {
+      "name": "Wohnzimmer (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904d251"
+      },
+      "uniId": "001e5e090904d251",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070984,
+    "_id": "salus.0.thermostats.001e5e090904d251",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904d251.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        },
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904d251_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904d251.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070990,
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071094,
+    "_id": "salus.0.thermostats.001e5e090904d251.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071029,
+    "_id": "salus.0.thermostats.001e5e090904d251.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071051,
+    "_id": "salus.0.thermostats.001e5e090904d251.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071016,
+    "_id": "salus.0.thermostats.001e5e090904d251.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 60,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071062,
+    "_id": "salus.0.thermostats.001e5e090904d251.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071083,
+    "_id": "salus.0.thermostats.001e5e090904d251.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071073,
+    "_id": "salus.0.thermostats.001e5e090904d251.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071041,
+    "_id": "salus.0.thermostats.001e5e090904d251.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 1,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d251.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071002,
+    "_id": "salus.0.thermostats.001e5e090904d251.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1": {
+    "type": "channel",
+    "common": {
+      "name": "Nico (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904d2b1"
+      },
+      "uniId": "001e5e090904d2b1",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070790,
+    "_id": "salus.0.thermostats.001e5e090904d2b1",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904d2b1.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        },
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904d2b1_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904d2b1.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070797,
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070911,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070843,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070866,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070828,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 59,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070879,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070900,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070890,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070854,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 1,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2b1.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070810,
+    "_id": "salus.0.thermostats.001e5e090904d2b1.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee": {
+    "type": "channel",
+    "common": {
+      "name": "Badezimmer (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904d2ee"
+      },
+      "uniId": "001e5e090904d2ee",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071312,
+    "_id": "salus.0.thermostats.001e5e090904d2ee",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904d2ee.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904d2ee_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        },
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904d2ee.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071321,
+    "val": 21.5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071452,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071363,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071384,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071353,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 57,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071395,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071433,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071407,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071374,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d2ee.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071337,
+    "_id": "salus.0.thermostats.001e5e090904d2ee.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402": {
+    "type": "channel",
+    "common": {
+      "name": "Kim (SQ610)",
+      "role": "thermostat"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 9,
+        "UniID": "001e5e090904d402"
+      },
+      "uniId": "001e5e090904d402",
+      "model": "SQ610"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305052113,
+    "_id": "salus.0.thermostats.001e5e090904d402",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.thermostats.001e5e090904d402.currentTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Current Temperature",
+      "type": "number",
+      "role": "value.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": false,
+      "custom": {
+        "sql.0": {
+          "enabled": true,
+          "storageType": "",
+          "counter": false,
+          "aliasId": "",
+          "debounceTime": 0,
+          "blockTime": 0,
+          "changesOnly": true,
+          "changesRelogInterval": 15,
+          "changesMinDelta": 0,
+          "ignoreBelowNumber": "",
+          "disableSkippedValueLogging": false,
+          "retention": 0,
+          "customRetentionDuration": 365,
+          "maxLength": 0,
+          "enableDebugLogs": false,
+          "debounce": 1000
+        },
+        "lovelace.0": {
+          "0": "",
+          "1": "",
+          "enabled": true,
+          "entity": "sensor",
+          "name": "thermostats_001e5e090904d402_currentTemperature",
+          "attr_device_class": "temperature",
+          "invert_state": false,
+          "attr_unit_of_measurement": "°C",
+          "attr_state_class": "measurement"
+        }
+      }
+    },
+    "native": {},
+    "_id": "salus.0.thermostats.001e5e090904d402.currentTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1793019959930,
+    "val": 20.5,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799628,
+    "_id": "salus.0.thermostats.001e5e090904d402.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000002D",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.heating": {
+    "type": "state",
+    "common": {
+      "name": "Heating Active",
+      "type": "boolean",
+      "role": "indicator.working",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799483,
+    "_id": "salus.0.thermostats.001e5e090904d402.heating",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.holdType": {
+    "type": "state",
+    "common": {
+      "name": "Operating Mode / Hold Type",
+      "type": "number",
+      "role": "level.mode.thermostat",
+      "read": true,
+      "write": true,
+      "states": {
+        "0": "Follow Schedule / Auto",
+        "2": "Permanent Hold",
+        "7": "Off / Standby"
+      }
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799527,
+    "_id": "salus.0.thermostats.001e5e090904d402.holdType",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.humidity": {
+    "type": "state",
+    "common": {
+      "name": "Relative Humidity",
+      "type": "number",
+      "role": "value.humidity",
+      "unit": "%",
+      "read": true,
+      "write": false,
+      "min": 0,
+      "max": 100
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799460,
+    "_id": "salus.0.thermostats.001e5e090904d402.humidity",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 61,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.locked": {
+    "type": "state",
+    "common": {
+      "name": "Keypad Lock",
+      "type": "boolean",
+      "role": "switch.lock",
+      "read": true,
+      "write": true
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799552,
+    "_id": "salus.0.thermostats.001e5e090904d402.locked",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.model": {
+    "type": "state",
+    "common": {
+      "name": "Model Identifier",
+      "type": "string",
+      "role": "info.model",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799610,
+    "_id": "salus.0.thermostats.001e5e090904d402.model",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "SQ610",
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799587,
+    "_id": "salus.0.thermostats.001e5e090904d402.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.runningState": {
+    "type": "state",
+    "common": {
+      "name": "Running State",
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799501,
+    "_id": "salus.0.thermostats.001e5e090904d402.runningState",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 1,
+    "ack": true
+  },
+  "salus.0.thermostats.001e5e090904d402.targetTemperature": {
+    "type": "state",
+    "common": {
+      "name": "Target Temperature",
+      "type": "number",
+      "role": "level.temperature",
+      "unit": "°C",
+      "read": true,
+      "write": true,
+      "min": 5,
+      "max": 35,
+      "step": 0.5
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793019799440,
+    "_id": "salus.0.thermostats.001e5e090904d402.targetTemperature",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 21,
+    "ack": true
+  },
+  "salus.0.wiringCenters": {
+    "type": "folder",
+    "common": {
+      "name": "Wiring Centers"
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070780,
+    "_id": "salus.0.wiringCenters",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf": {
+    "type": "channel",
+    "common": {
+      "name": "EG Flur (Wiring Center)",
+      "role": "heating"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 8,
+        "UniID": "001e5e0909044aaf"
+      },
+      "uniId": "001e5e0909044aaf",
+      "model": "it600WC"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070923,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf.errorCode": {
+    "type": "state",
+    "common": {
+      "name": "Error Code",
+      "type": "string",
+      "role": "info.status",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070942,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf.errorCode",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000",
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070963,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "20230222",
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf.hasError": {
+    "type": "state",
+    "common": {
+      "name": "Fault Indicator",
+      "type": "boolean",
+      "role": "indicator.alarm",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070953,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf.hasError",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070931,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044aaf.rssi": {
+    "type": "state",
+    "common": {
+      "name": "Signal RSSI",
+      "type": "number",
+      "role": "value.rssi",
+      "unit": "dBm",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305070973,
+    "_id": "salus.0.wiringCenters.001e5e0909044aaf.rssi",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": -54,
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044c04": {
+    "type": "channel",
+    "common": {
+      "name": "OG Flur (Wiring Center)",
+      "role": "heating"
+    },
+    "native": {
+      "deviceData": {
+        "DeviceType": 100,
+        "Endpoint": 8,
+        "UniID": "001e5e0909044c04"
+      },
+      "uniId": "001e5e0909044c04",
+      "model": "it600WC"
+    },
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071233,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "salus.0.wiringCenters.001e5e0909044c04.errorCode": {
+    "type": "state",
+    "common": {
+      "name": "Error Code",
+      "type": "string",
+      "role": "info.status",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071257,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04.errorCode",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "0000",
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044c04.firmware": {
+    "type": "state",
+    "common": {
+      "name": "Firmware Version",
+      "type": "string",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071278,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04.firmware",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": "20230222",
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044c04.hasError": {
+    "type": "state",
+    "common": {
+      "name": "Fault Indicator",
+      "type": "boolean",
+      "role": "indicator.alarm",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071268,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04.hasError",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044c04.online": {
+    "type": "state",
+    "common": {
+      "name": "Online Status",
+      "type": "boolean",
+      "role": "indicator.reachable",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071240,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04.online",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": true,
+    "ack": true
+  },
+  "salus.0.wiringCenters.001e5e0909044c04.rssi": {
+    "type": "state",
+    "common": {
+      "name": "Signal RSSI",
+      "type": "number",
+      "role": "value.rssi",
+      "unit": "dBm",
+      "read": true,
+      "write": false
+    },
+    "native": {},
+    "from": "system.adapter.salus.0",
+    "user": "system.user.admin",
+    "ts": 1793305071289,
+    "_id": "salus.0.wiringCenters.001e5e0909044c04.rssi",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": -54,
+    "ack": true
+  }
+}

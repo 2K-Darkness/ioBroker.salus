@@ -86,6 +86,22 @@ class SalusIt600Adapter extends utils.Adapter {
             let thermostatCount = 0;
             let wiringCenterCount = 0;
 
+            await this.extendObjectAsync('thermostats', {
+                type: 'folder',
+                common: {
+                    name: 'Thermostats'
+                },
+                native: {}
+            });
+
+            await this.extendObjectAsync('wiringCenters', {
+                type: 'folder',
+                common: {
+                    name: 'Wiring Centers'
+                },
+                native: {}
+            });
+
             for (const item of response.id) {
                 if (!item || !item.data) continue;
 
@@ -276,7 +292,7 @@ class SalusIt600Adapter extends utils.Adapter {
 
         // Signal RSSI / LQI if available
         if (it600i && it600i.LastMessageRSSI_d !== undefined) {
-            await this.ensureState(`${channelId}.rssi`, 'Signal RSSI', 'number', 'value.signal', 'dBm', true, false);
+            await this.ensureState(`${channelId}.rssi`, 'Signal RSSI', 'number', 'value.rssi', 'dBm', true, false);
             await this.setStateAsync(`${channelId}.rssi`, { val: it600i.LastMessageRSSI_d, ack: true });
         }
     }
@@ -313,7 +329,7 @@ class SalusIt600Adapter extends utils.Adapter {
     }
 
     async ensureState(id, name, type, role, unit, read, write, extra = {}) {
-        await this.setObjectNotExistsAsync(id, {
+        await this.extendObjectAsync(id, {
             type: 'state',
             common: {
                 name: name,
