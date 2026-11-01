@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "news": {
+      "0.1.5": {
+        "en": "Prevent objects.jsonl bloat by creating objects once via setObjectNotExistsAsync with in-memory caching",
+        "de": "Verhindert Aufblähen von objects.jsonl: Objekte werden nur einmalig via setObjectNotExistsAsync angelegt und im Speicher gecacht",
+        "ru": "Предотвращение раздувания objects.jsonl: объекты создаются один раз через setObjectNotExistsAsync с кэшированием в памяти",
+        "pt": "Evita o inchaço de objects.jsonl criando objetos apenas uma vez via setObjectNotExistsAsync com cache na memória",
+        "nl": "Voorkomt opblazen van objects.jsonl door objecten slechts eenmaal aan te maken via setObjectNotExistsAsync met in-memory caching",
+        "fr": "Empêche le gonflement de objects.jsonl en créant les objets une seule fois via setObjectNotExistsAsync avec mise en cache",
+        "it": "Previene il sovraccarico di objects.jsonl creando gli oggetti una volta tramite setObjectNotExistsAsync con cache in memoria",
+        "es": "Evita el crecimiento excesivo de objects.jsonl creando objetos una sola vez mediante setObjectNotExistsAsync con almacenamiento en caché",
+        "pl": "Zapobiega rozrastaniu się objects.jsonl poprzez jednorazowe tworzenie obiektów przez setObjectNotExistsAsync z buforowaniem w pamięci",
+        "uk": "Запобігає роздуванню objects.jsonl: об'єкти створюються один раз через setObjectNotExistsAsync з кешуванням у пам'яті",
+        "zh-cn": "防止 objects.jsonl 膨胀：通过带内存缓存的 setObjectNotExistsAsync 仅创建一次对象"
+      },
       "0.1.4": {
         "en": "Add folder objects for device categories and align RSSI state role to value.rssi for repochecker compliance",
         "de": "Ordner-Objekte für Gerätekategorien hinzugefügt und RSSI-Rolle auf value.rssi angepasst für Repochecker-Konformität",

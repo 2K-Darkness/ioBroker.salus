@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.5 (2026-11-01)
+* (2K-Darkness) Prevent objects.jsonl bloat by creating objects once via setObjectNotExistsAsync with in-memory caching
+
 ### 0.1.4 (2026-10-29)
 * (2K-Darkness) Add folder objects for device categories and align RSSI state role to value.rssi for repochecker compliance
 

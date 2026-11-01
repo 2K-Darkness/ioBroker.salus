@@ -13,6 +13,7 @@ class SalusIt600Adapter extends utils.Adapter {
         this.gateway = null;
         this.pollTimer = null;
         this.deviceDataMap = new Map();
+        this.knownObjects = new Set();
 
         this.on('ready', this.onReady.bind(this));
         this.on('stateChange', this.onStateChange.bind(this));
@@ -54,10 +55,10 @@ class SalusIt600Adapter extends utils.Adapter {
 
     startPolling(intervalSec) {
         if (this.pollTimer) {
-            this.clearTimeout(this.pollTimer);
+            clearTimeout(this.pollTimer);
         }
 
-        this.pollTimer = this.setTimeout(async () => {
+        this.pollTimer = setTimeout(async () => {
             try {
                 await this.pollGateway();
             } catch (err) {
@@ -86,21 +87,27 @@ class SalusIt600Adapter extends utils.Adapter {
             let thermostatCount = 0;
             let wiringCenterCount = 0;
 
-            await this.extendObjectAsync('thermostats', {
-                type: 'folder',
-                common: {
-                    name: 'Thermostats'
-                },
-                native: {}
-            });
+            if (!this.knownObjects.has('thermostats')) {
+                await this.setObjectNotExistsAsync('thermostats', {
+                    type: 'folder',
+                    common: {
+                        name: 'Thermostats'
+                    },
+                    native: {}
+                });
+                this.knownObjects.add('thermostats');
+            }
 
-            await this.extendObjectAsync('wiringCenters', {
-                type: 'folder',
-                common: {
-                    name: 'Wiring Centers'
-                },
-                native: {}
-            });
+            if (!this.knownObjects.has('wiringCenters')) {
+                await this.setObjectNotExistsAsync('wiringCenters', {
+                    type: 'folder',
+                    common: {
+                        name: 'Wiring Centers'
+                    },
+                    native: {}
+                });
+                this.knownObjects.add('wiringCenters');
+            }
 
             for (const item of response.id) {
                 if (!item || !item.data) continue;
@@ -159,19 +166,22 @@ class SalusIt600Adapter extends utils.Adapter {
         const channelId = `thermostats.${uniId}`;
         const displayName = name ? `${name} (${model})` : `Thermostat ${uniId}`;
 
-        // Create or update Channel
-        await this.extendObjectAsync(channelId, {
-            type: 'channel',
-            common: {
-                name: displayName,
-                role: 'thermostat'
-            },
-            native: {
-                deviceData: devData,
-                uniId: uniId,
-                model: model
-            }
-        });
+        // Create Channel only if not already initialized
+        if (!this.knownObjects.has(channelId)) {
+            await this.setObjectNotExistsAsync(channelId, {
+                type: 'channel',
+                common: {
+                    name: displayName,
+                    role: 'thermostat'
+                },
+                native: {
+                    deviceData: devData,
+                    uniId: uniId,
+                    model: model
+                }
+            });
+            this.knownObjects.add(channelId);
+        }
 
         // 1. Current Temperature
         const currentTemp = th.LocalTemperature_x100 !== undefined ? th.LocalTemperature_x100 / 100 : null;
@@ -258,18 +268,21 @@ class SalusIt600Adapter extends utils.Adapter {
         const channelId = `wiringCenters.${uniId}`;
         const displayName = name ? `${name} (Wiring Center)` : `Wiring Center ${uniId}`;
 
-        await this.extendObjectAsync(channelId, {
-            type: 'channel',
-            common: {
-                name: displayName,
-                role: 'heating'
-            },
-            native: {
-                deviceData: devData,
-                uniId: uniId,
-                model: model
-            }
-        });
+        if (!this.knownObjects.has(channelId)) {
+            await this.setObjectNotExistsAsync(channelId, {
+                type: 'channel',
+                common: {
+                    name: displayName,
+                    role: 'heating'
+                },
+                native: {
+                    deviceData: devData,
+                    uniId: uniId,
+                    model: model
+                }
+            });
+            this.knownObjects.add(channelId);
+        }
 
         // Online Status
         await this.ensureState(`${channelId}.online`, 'Online Status', 'boolean', 'indicator.reachable', '', true, false);
@@ -300,14 +313,17 @@ class SalusIt600Adapter extends utils.Adapter {
     async processGatewayDevice(gw, firmware, isOnline) {
         const deviceId = 'gateway';
 
-        await this.extendObjectAsync(deviceId, {
-            type: 'device',
-            common: {
-                name: 'Salus Gateway (UGE600)',
-                role: 'info'
-            },
-            native: {}
-        });
+        if (!this.knownObjects.has(deviceId)) {
+            await this.setObjectNotExistsAsync(deviceId, {
+                type: 'device',
+                common: {
+                    name: 'Salus Gateway (UGE600)',
+                    role: 'info'
+                },
+                native: {}
+            });
+            this.knownObjects.add(deviceId);
+        }
 
         const mac = gw.NetworkLANMAC || '';
         if (mac) {
@@ -329,7 +345,11 @@ class SalusIt600Adapter extends utils.Adapter {
     }
 
     async ensureState(id, name, type, role, unit, read, write, extra = {}) {
-        await this.extendObjectAsync(id, {
+        if (this.knownObjects.has(id)) {
+            return;
+        }
+
+        await this.setObjectNotExistsAsync(id, {
             type: 'state',
             common: {
                 name: name,
@@ -342,6 +362,8 @@ class SalusIt600Adapter extends utils.Adapter {
             },
             native: {}
         });
+
+        this.knownObjects.add(id);
     }
 
     async onStateChange(id, state) {
@@ -407,7 +429,7 @@ class SalusIt600Adapter extends utils.Adapter {
     onUnload(callback) {
         try {
             if (this.pollTimer) {
-                this.clearTimeout(this.pollTimer);
+                clearTimeout(this.pollTimer);
                 this.pollTimer = null;
             }
             this.setState('info.connection', { val: false, ack: true });
