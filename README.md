@@ -6,7 +6,7 @@
 ![Test and Release](https://github.com/2K-Darkness/ioBroker.salus/workflows/Test%20and%20Release/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**ioBroker adapter for Salus Smart Home & iT600 underfloor heating (FBH) with Universal Gateway (UGE600 / UG600 / UG800).**
+**ioBroker adapter for [Salus Controls](https://salus-controls.com/) Smart Home & iT600 underfloor heating (FBH) with Universal Gateway (UGE600 / UG600 / UG800).**
 
 Communicates **100% locally** with the Salus Gateway via encrypted local HTTP API (AES-256-CBC) without relying on cloud services.
 
@@ -81,7 +81,7 @@ In the ioBroker Admin panel for the `salus` instance:
 | `online` | boolean | `indicator.reachable` | R | Reachable status |
 | `errorCode` | string | `info.status` | R | Hardware error code (`0000` = normal) |
 | `hasError` | boolean | `indicator.alarm` | R | `true` if any hardware error is detected |
-| `rssi` | number | `value.signal` | R | Last message signal strength (dBm) |
+| `rssi` | number | `value.rssi` | R | Last message signal strength (dBm) |
 
 ---
 
@@ -95,6 +95,9 @@ Because this adapter follows official ioBroker roles:
 ---
 
 ## Changelog
+
+### 0.1.6 (2026-11-12)
+* (2K-Darkness) Review compliance update: support compact mode, sanitize object IDs, update adapter-core, refine documentation
 
 ### 0.1.5 (2026-11-01)
 * (2K-Darkness) Prevent objects.jsonl bloat by creating objects once via setObjectNotExistsAsync with in-memory caching

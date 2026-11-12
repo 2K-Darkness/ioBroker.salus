@@ -26,7 +26,7 @@ class SalusIt600Adapter extends utils.Adapter {
 
         const host = (this.config.host || '').trim();
         const euid = (this.config.euid || '0000000000000000').trim();
-        const pollInterval = Math.max(10, Number(this.config.pollInterval) || 30);
+        const pollInterval = Math.min(3600, Math.max(10, Number(this.config.pollInterval) || 30));
 
         if (!host) {
             this.log.error('Gateway IP address not configured! Please configure host IP in adapter settings.');
@@ -113,7 +113,9 @@ class SalusIt600Adapter extends utils.Adapter {
                 if (!item || !item.data) continue;
 
                 const devData = item.data;
-                const uniId = devData.UniID;
+                const rawUniId = devData.UniID;
+                if (!rawUniId) continue;
+                const uniId = String(rawUniId).replace(this.FORBIDDEN_CHARS || /[^a-zA-Z0-9_-]/g, '_');
 
                 // Cache device data descriptor for write commands
                 if (uniId && devData) {

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "news": {
+      "0.1.6": {
+        "en": "Code compliance and review optimizations (compact mode, object ID sanitization, adapter-core update, documentation refinements)",
+        "de": "Code-Compliance und Review-Optimierungen (Kompaktmodus, Objekt-ID-Sanitisierung, Aktualisierung von adapter-core, Dokumentationsverbesserungen)",
+        "ru": "Оптимизация соответствия кода и проверки (компактный режим, очистка ID объектов, обновление adapter-core, улучшения документации)",
+        "pt": "Otimizações de conformidade e revisão de código (modo compacto, sanitização de ID de objeto, atualização de adapter-core, refinamentos de documentação)",
+        "nl": "Code-compliance en review-optimalisaties (compacte modus, object-ID-sanitisatie, adapter-core-update, documentatieverbeteringen)",
+        "fr": "Optimisations de conformité du code et de révision (mode compact, assainissement des ID d'objet, mise à jour adapter-core, améliorations de la documentation)",
+        "it": "Ottimizzazioni della conformità del codice e della revisione (modalità compatta, sanitizzazione ID oggetto, aggiornamento adapter-core, miglioramenti della documentazione)",
+        "es": "Optimizaciones de conformidad de código y revisión (modo compacto, desinfección de ID de objeto, actualización de adapter-core, mejoras de documentación)",
+        "pl": "Optymalizacje zgodności kodu i przeglądu (tryb kompaktowy, sanityzacja ID obiektów, aktualizacja adapter-core, ulepszenia dokumentacji)",
+        "uk": "Оптимізації відповідності коду та перевірки (компактний режим, санітизація ID об'єктів, оновлення adapter-core, покращення документації)",
+        "zh-cn": "代码合规性与审查优化（紧凑模式、对象 ID 净化、adapter-core 更新、文档完善）"
+      },
       "0.1.5": {
         "en": "Prevent objects.jsonl bloat by creating objects once via setObjectNotExistsAsync with in-memory caching",
         "de": "Verhindert Aufblähen von objects.jsonl: Objekte werden nur einmalig via setObjectNotExistsAsync angelegt und im Speicher gecacht",
@@ -127,6 +140,7 @@
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/2K-Darkness/ioBroker.salus/main/admin/salus.png",
     "type": "climate-control",
+    "compact": true,
     "connectionType": "local",
     "dataSource": "poll",
     "dependencies": [
