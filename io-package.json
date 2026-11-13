@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "news": {
+      "0.1.7": {
+        "en": "Address review findings: use adapter setTimeout/clearTimeout, remove EUID from info log, remove unused setSwitch, update testing dependency and workflow check action",
+        "de": "Review-Feedback umgesetzt: adapter.setTimeout/clearTimeout verwendet, EUID aus Info-Log entfernt, ungenutztes setSwitch entfernt, Test-Abhängigkeit und Workflow-Aktion aktualisiert",
+        "ru": "Учтены замечания проверки: использование adapter.setTimeout/clearTimeout, удаление EUID из логов info, удаление неиспользуемого setSwitch, обновление тестовых зависимостей и действий рабочего процесса",
+        "pt": "Abordados os resultados da revisão: usar adapter.setTimeout/clearTimeout, remover EUID do log de informações, remover setSwitch não utilizado, atualizar dependência de teste e ação de verificação do fluxo de trabalho",
+        "nl": "Review-bevindingen verwerkt: adapter.setTimeout/clearTimeout gebruikt, EUID verwijderd uit info-logboek, ongebruikte setSwitch verwijderd, testafhankelijkheid en workflow-actie bijgewerkt",
+        "fr": "Traitement des remarques de révision : utilisation de adapter.setTimeout/clearTimeout, suppression de l'EUID des journaux d'info, suppression de setSwitch inutilisé, mise à jour des dépendances de test et de l'action de workflow",
+        "it": "Risolti i rilievi della revisione: uso di adapter.setTimeout/clearTimeout, rimozione di EUID dai log di info, rimozione di setSwitch inutilizzato, aggiornamento delle dipendenze di test e azione del flusso di lavoro",
+        "es": "Se corrigieron los hallazgos de la revisión: uso de adapter.setTimeout/clearTimeout, eliminación de EUID del registro de información, eliminación de setSwitch no utilizado, actualización de dependencias de prueba y acción de flujo de trabajo",
+        "pl": "Uwzględniono uwagi z recenzji: użycie adapter.setTimeout/clearTimeout, usunięcie EUID z logów info, usunięcie nieużywanego setSwitch, aktualizacja zależności testowych i akcji workflow",
+        "uk": "Враховано зауваження перевірки: використання adapter.setTimeout/clearTimeout, видалення EUID з логів info, видалення невикористаного setSwitch, оновлення тестових залежностей та дій робочого процесу",
+        "zh-cn": "解决审查发现的问题：使用 adapter.setTimeout/clearTimeout、从 info 日志中移除 EUID、移除未使用的 setSwitch、更新测试依赖项和工作流检查操作"
+      },
       "0.1.6": {
         "en": "Code compliance and review optimizations (compact mode, object ID sanitization, adapter-core update, documentation refinements)",
         "de": "Code-Compliance und Review-Optimierungen (Kompaktmodus, Objekt-ID-Sanitisierung, Aktualisierung von adapter-core, Dokumentationsverbesserungen)",

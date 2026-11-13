@@ -8,7 +8,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305052171,
+    "ts": 1793537748580,
     "_id": "salus.0.gateway",
     "acl": {
       "object": 1636,
@@ -28,7 +28,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799682,
+    "ts": 1793451319483,
     "_id": "salus.0.gateway.mac",
     "acl": {
       "object": 1636,
@@ -51,7 +51,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799707,
+    "ts": 1793451319492,
     "_id": "salus.0.gateway.model",
     "acl": {
       "object": 1636,
@@ -74,7 +74,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799725,
+    "ts": 1793451319498,
     "_id": "salus.0.gateway.online",
     "acl": {
       "object": 1636,
@@ -93,7 +93,7 @@
     },
     "native": {},
     "from": "system.adapter.salus.0",
-    "ts": 1793305070592,
+    "ts": 1794562623785,
     "acl": {
       "object": 1636,
       "owner": "system.user.admin",
@@ -114,7 +114,7 @@
     },
     "native": {},
     "from": "system.adapter.salus.0",
-    "ts": 1793305070600,
+    "ts": 1794562623791,
     "acl": {
       "object": 1636,
       "state": 1636,
@@ -138,7 +138,7 @@
     },
     "native": {},
     "from": "system.adapter.salus.0",
-    "ts": 1793305070617,
+    "ts": 1794562623807,
     "acl": {
       "object": 1636,
       "state": 1636,
@@ -162,7 +162,7 @@
     },
     "native": {},
     "from": "system.adapter.salus.0",
-    "ts": 1793305070607,
+    "ts": 1794562623800,
     "acl": {
       "object": 1636,
       "state": 1636,
@@ -170,7 +170,7 @@
       "ownerGroup": "system.group.administrator"
     },
     "user": "system.user.admin",
-    "val": "2026-10-29T20:17:00.569Z",
+    "val": "2026-11-13T09:36:08.182Z",
     "ack": true
   },
   "salus.0.thermostats": {
@@ -181,7 +181,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070773,
+    "ts": 1793451362608,
     "_id": "salus.0.thermostats",
     "acl": {
       "object": 1636,
@@ -206,7 +206,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071104,
+    "ts": 1793537748424,
     "_id": "salus.0.thermostats.001e5e090904cfa7",
     "acl": {
       "object": 1636,
@@ -265,8 +265,8 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071111,
-    "val": 19.5,
+    "ts": 1793451831158,
+    "val": 18.5,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfa7.firmware": {
@@ -281,7 +281,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071220,
+    "ts": 1793451319215,
     "_id": "salus.0.thermostats.001e5e090904cfa7.firmware",
     "acl": {
       "object": 1636,
@@ -304,7 +304,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071151,
+    "ts": 1793451849688,
     "_id": "salus.0.thermostats.001e5e090904cfa7.heating",
     "acl": {
       "object": 1636,
@@ -332,7 +332,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071176,
+    "ts": 1793451867131,
     "_id": "salus.0.thermostats.001e5e090904cfa7.holdType",
     "acl": {
       "object": 1636,
@@ -358,7 +358,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071139,
+    "ts": 1793451841719,
     "_id": "salus.0.thermostats.001e5e090904cfa7.humidity",
     "acl": {
       "object": 1636,
@@ -366,7 +366,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 57,
+    "val": 56,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfa7.locked": {
@@ -381,7 +381,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071186,
+    "ts": 1793451319194,
     "_id": "salus.0.thermostats.001e5e090904cfa7.locked",
     "acl": {
       "object": 1636,
@@ -404,7 +404,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071209,
+    "ts": 1793451319208,
     "_id": "salus.0.thermostats.001e5e090904cfa7.model",
     "acl": {
       "object": 1636,
@@ -427,7 +427,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071198,
+    "ts": 1793451319201,
     "_id": "salus.0.thermostats.001e5e090904cfa7.online",
     "acl": {
       "object": 1636,
@@ -450,7 +450,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071162,
+    "ts": 1793451862086,
     "_id": "salus.0.thermostats.001e5e090904cfa7.runningState",
     "acl": {
       "object": 1636,
@@ -477,7 +477,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071124,
+    "ts": 1793451834438,
     "_id": "salus.0.thermostats.001e5e090904cfa7.targetTemperature",
     "acl": {
       "object": 1636,
@@ -505,7 +505,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071462,
+    "ts": 1793537748506,
     "_id": "salus.0.thermostats.001e5e090904cfca",
     "acl": {
       "object": 1636,
@@ -564,8 +564,8 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071469,
-    "val": 21.5,
+    "ts": 1793451319338,
+    "val": 20.5,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfca.firmware": {
@@ -580,7 +580,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799393,
+    "ts": 1793451319400,
     "_id": "salus.0.thermostats.001e5e090904cfca.firmware",
     "acl": {
       "object": 1636,
@@ -603,7 +603,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071503,
+    "ts": 1793451319360,
     "_id": "salus.0.thermostats.001e5e090904cfca.heating",
     "acl": {
       "object": 1636,
@@ -611,7 +611,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": false,
+    "val": true,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfca.holdType": {
@@ -631,7 +631,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071529,
+    "ts": 1793451319373,
     "_id": "salus.0.thermostats.001e5e090904cfca.holdType",
     "acl": {
       "object": 1636,
@@ -657,7 +657,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071492,
+    "ts": 1793451319354,
     "_id": "salus.0.thermostats.001e5e090904cfca.humidity",
     "acl": {
       "object": 1636,
@@ -665,7 +665,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 64,
+    "val": 54,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfca.locked": {
@@ -680,7 +680,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071542,
+    "ts": 1793451319381,
     "_id": "salus.0.thermostats.001e5e090904cfca.locked",
     "acl": {
       "object": 1636,
@@ -703,7 +703,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799356,
+    "ts": 1793451319393,
     "_id": "salus.0.thermostats.001e5e090904cfca.model",
     "acl": {
       "object": 1636,
@@ -726,7 +726,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071553,
+    "ts": 1793451319387,
     "_id": "salus.0.thermostats.001e5e090904cfca.online",
     "acl": {
       "object": 1636,
@@ -749,7 +749,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071517,
+    "ts": 1793451319367,
     "_id": "salus.0.thermostats.001e5e090904cfca.runningState",
     "acl": {
       "object": 1636,
@@ -757,7 +757,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 0,
+    "val": 1,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904cfca.targetTemperature": {
@@ -776,7 +776,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071481,
+    "ts": 1793451319346,
     "_id": "salus.0.thermostats.001e5e090904cfca.targetTemperature",
     "acl": {
       "object": 1636,
@@ -784,7 +784,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 5,
+    "val": 21,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d156": {
@@ -804,7 +804,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305052193,
+    "ts": 1793537748593,
     "_id": "salus.0.thermostats.001e5e090904d156",
     "acl": {
       "object": 1636,
@@ -861,9 +861,9 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "from": "system.adapter.admin.0",
+    "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019931312,
+    "ts": 1793451319510,
     "val": 21.5,
     "ack": true
   },
@@ -879,7 +879,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019800031,
+    "ts": 1793451319580,
     "_id": "salus.0.thermostats.001e5e090904d156.firmware",
     "acl": {
       "object": 1636,
@@ -902,7 +902,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799823,
+    "ts": 1793451319534,
     "_id": "salus.0.thermostats.001e5e090904d156.heating",
     "acl": {
       "object": 1636,
@@ -930,7 +930,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799866,
+    "ts": 1793451319547,
     "_id": "salus.0.thermostats.001e5e090904d156.holdType",
     "acl": {
       "object": 1636,
@@ -956,7 +956,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799802,
+    "ts": 1793451319527,
     "_id": "salus.0.thermostats.001e5e090904d156.humidity",
     "acl": {
       "object": 1636,
@@ -964,7 +964,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 62,
+    "val": 50,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d156.locked": {
@@ -979,7 +979,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799910,
+    "ts": 1793451319554,
     "_id": "salus.0.thermostats.001e5e090904d156.locked",
     "acl": {
       "object": 1636,
@@ -1002,7 +1002,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019800006,
+    "ts": 1793451319567,
     "_id": "salus.0.thermostats.001e5e090904d156.model",
     "acl": {
       "object": 1636,
@@ -1025,7 +1025,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799950,
+    "ts": 1793451319561,
     "_id": "salus.0.thermostats.001e5e090904d156.online",
     "acl": {
       "object": 1636,
@@ -1048,7 +1048,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799842,
+    "ts": 1793451319540,
     "_id": "salus.0.thermostats.001e5e090904d156.runningState",
     "acl": {
       "object": 1636,
@@ -1075,7 +1075,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799785,
+    "ts": 1793451319517,
     "_id": "salus.0.thermostats.001e5e090904d156.targetTemperature",
     "acl": {
       "object": 1636,
@@ -1103,7 +1103,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070984,
+    "ts": 1793537748393,
     "_id": "salus.0.thermostats.001e5e090904d251",
     "acl": {
       "object": 1636,
@@ -1162,8 +1162,8 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070990,
-    "val": 21,
+    "ts": 1793451363160,
+    "val": 20.5,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d251.firmware": {
@@ -1178,7 +1178,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071094,
+    "ts": 1793451813611,
     "_id": "salus.0.thermostats.001e5e090904d251.firmware",
     "acl": {
       "object": 1636,
@@ -1201,7 +1201,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071029,
+    "ts": 1793451363237,
     "_id": "salus.0.thermostats.001e5e090904d251.heating",
     "acl": {
       "object": 1636,
@@ -1229,7 +1229,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071051,
+    "ts": 1793451363387,
     "_id": "salus.0.thermostats.001e5e090904d251.holdType",
     "acl": {
       "object": 1636,
@@ -1255,7 +1255,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071016,
+    "ts": 1793451363213,
     "_id": "salus.0.thermostats.001e5e090904d251.humidity",
     "acl": {
       "object": 1636,
@@ -1263,7 +1263,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 60,
+    "val": 52,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d251.locked": {
@@ -1278,7 +1278,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071062,
+    "ts": 1793451366756,
     "_id": "salus.0.thermostats.001e5e090904d251.locked",
     "acl": {
       "object": 1636,
@@ -1301,7 +1301,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071083,
+    "ts": 1793451800382,
     "_id": "salus.0.thermostats.001e5e090904d251.model",
     "acl": {
       "object": 1636,
@@ -1324,7 +1324,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071073,
+    "ts": 1793451762119,
     "_id": "salus.0.thermostats.001e5e090904d251.online",
     "acl": {
       "object": 1636,
@@ -1347,7 +1347,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071041,
+    "ts": 1793451363352,
     "_id": "salus.0.thermostats.001e5e090904d251.runningState",
     "acl": {
       "object": 1636,
@@ -1374,7 +1374,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071002,
+    "ts": 1793451363189,
     "_id": "salus.0.thermostats.001e5e090904d251.targetTemperature",
     "acl": {
       "object": 1636,
@@ -1402,7 +1402,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070790,
+    "ts": 1793538119315,
     "_id": "salus.0.thermostats.001e5e090904d2b1",
     "acl": {
       "object": 1636,
@@ -1461,8 +1461,8 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070797,
-    "val": 21,
+    "ts": 1793451362787,
+    "val": 20.5,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2b1.firmware": {
@@ -1477,7 +1477,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070911,
+    "ts": 1793451363020,
     "_id": "salus.0.thermostats.001e5e090904d2b1.firmware",
     "acl": {
       "object": 1636,
@@ -1500,7 +1500,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070843,
+    "ts": 1793451362887,
     "_id": "salus.0.thermostats.001e5e090904d2b1.heating",
     "acl": {
       "object": 1636,
@@ -1528,7 +1528,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070866,
+    "ts": 1793451362934,
     "_id": "salus.0.thermostats.001e5e090904d2b1.holdType",
     "acl": {
       "object": 1636,
@@ -1554,7 +1554,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070828,
+    "ts": 1793451362864,
     "_id": "salus.0.thermostats.001e5e090904d2b1.humidity",
     "acl": {
       "object": 1636,
@@ -1562,7 +1562,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 59,
+    "val": 54,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2b1.locked": {
@@ -1577,7 +1577,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070879,
+    "ts": 1793451362959,
     "_id": "salus.0.thermostats.001e5e090904d2b1.locked",
     "acl": {
       "object": 1636,
@@ -1600,7 +1600,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070900,
+    "ts": 1793451363002,
     "_id": "salus.0.thermostats.001e5e090904d2b1.model",
     "acl": {
       "object": 1636,
@@ -1623,7 +1623,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070890,
+    "ts": 1793451362983,
     "_id": "salus.0.thermostats.001e5e090904d2b1.online",
     "acl": {
       "object": 1636,
@@ -1646,7 +1646,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070854,
+    "ts": 1793451362913,
     "_id": "salus.0.thermostats.001e5e090904d2b1.runningState",
     "acl": {
       "object": 1636,
@@ -1673,7 +1673,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070810,
+    "ts": 1793451362826,
     "_id": "salus.0.thermostats.001e5e090904d2b1.targetTemperature",
     "acl": {
       "object": 1636,
@@ -1701,7 +1701,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071312,
+    "ts": 1793537748473,
     "_id": "salus.0.thermostats.001e5e090904d2ee",
     "acl": {
       "object": 1636,
@@ -1760,8 +1760,8 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071321,
-    "val": 21.5,
+    "ts": 1793451319261,
+    "val": 20,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2ee.firmware": {
@@ -1776,7 +1776,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071452,
+    "ts": 1793451319326,
     "_id": "salus.0.thermostats.001e5e090904d2ee.firmware",
     "acl": {
       "object": 1636,
@@ -1799,7 +1799,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071363,
+    "ts": 1793451319285,
     "_id": "salus.0.thermostats.001e5e090904d2ee.heating",
     "acl": {
       "object": 1636,
@@ -1807,7 +1807,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": false,
+    "val": true,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2ee.holdType": {
@@ -1827,7 +1827,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071384,
+    "ts": 1793451319298,
     "_id": "salus.0.thermostats.001e5e090904d2ee.holdType",
     "acl": {
       "object": 1636,
@@ -1835,7 +1835,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 0,
+    "val": 2,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2ee.humidity": {
@@ -1853,7 +1853,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071353,
+    "ts": 1793451319277,
     "_id": "salus.0.thermostats.001e5e090904d2ee.humidity",
     "acl": {
       "object": 1636,
@@ -1861,7 +1861,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 57,
+    "val": 39,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2ee.locked": {
@@ -1876,7 +1876,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071395,
+    "ts": 1793451319305,
     "_id": "salus.0.thermostats.001e5e090904d2ee.locked",
     "acl": {
       "object": 1636,
@@ -1899,7 +1899,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071433,
+    "ts": 1793451319318,
     "_id": "salus.0.thermostats.001e5e090904d2ee.model",
     "acl": {
       "object": 1636,
@@ -1922,7 +1922,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071407,
+    "ts": 1793451319312,
     "_id": "salus.0.thermostats.001e5e090904d2ee.online",
     "acl": {
       "object": 1636,
@@ -1945,7 +1945,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071374,
+    "ts": 1793451319291,
     "_id": "salus.0.thermostats.001e5e090904d2ee.runningState",
     "acl": {
       "object": 1636,
@@ -1953,7 +1953,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 0,
+    "val": 1,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d2ee.targetTemperature": {
@@ -1972,7 +1972,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071337,
+    "ts": 1793451319269,
     "_id": "salus.0.thermostats.001e5e090904d2ee.targetTemperature",
     "acl": {
       "object": 1636,
@@ -2000,7 +2000,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305052113,
+    "ts": 1793537748548,
     "_id": "salus.0.thermostats.001e5e090904d402",
     "acl": {
       "object": 1636,
@@ -2057,10 +2057,10 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "from": "system.adapter.admin.0",
+    "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019959930,
-    "val": 20.5,
+    "ts": 1793451319410,
+    "val": 20,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d402.firmware": {
@@ -2075,7 +2075,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799628,
+    "ts": 1793451319473,
     "_id": "salus.0.thermostats.001e5e090904d402.firmware",
     "acl": {
       "object": 1636,
@@ -2098,7 +2098,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799483,
+    "ts": 1793451319433,
     "_id": "salus.0.thermostats.001e5e090904d402.heating",
     "acl": {
       "object": 1636,
@@ -2126,7 +2126,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799527,
+    "ts": 1793451319446,
     "_id": "salus.0.thermostats.001e5e090904d402.holdType",
     "acl": {
       "object": 1636,
@@ -2152,7 +2152,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799460,
+    "ts": 1793451319426,
     "_id": "salus.0.thermostats.001e5e090904d402.humidity",
     "acl": {
       "object": 1636,
@@ -2160,7 +2160,7 @@
       "owner": "system.user.admin",
       "ownerGroup": "system.group.administrator"
     },
-    "val": 61,
+    "val": 55,
     "ack": true
   },
   "salus.0.thermostats.001e5e090904d402.locked": {
@@ -2175,7 +2175,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799552,
+    "ts": 1793451319454,
     "_id": "salus.0.thermostats.001e5e090904d402.locked",
     "acl": {
       "object": 1636,
@@ -2198,7 +2198,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799610,
+    "ts": 1793451319467,
     "_id": "salus.0.thermostats.001e5e090904d402.model",
     "acl": {
       "object": 1636,
@@ -2221,7 +2221,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799587,
+    "ts": 1793451319460,
     "_id": "salus.0.thermostats.001e5e090904d402.online",
     "acl": {
       "object": 1636,
@@ -2244,7 +2244,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799501,
+    "ts": 1793451319439,
     "_id": "salus.0.thermostats.001e5e090904d402.runningState",
     "acl": {
       "object": 1636,
@@ -2271,7 +2271,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793019799440,
+    "ts": 1793451319418,
     "_id": "salus.0.thermostats.001e5e090904d402.targetTemperature",
     "acl": {
       "object": 1636,
@@ -2290,7 +2290,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070780,
+    "ts": 1793451362734,
     "_id": "salus.0.wiringCenters",
     "acl": {
       "object": 1636,
@@ -2315,7 +2315,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070923,
+    "ts": 1793537748373,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf",
     "acl": {
       "object": 1636,
@@ -2335,7 +2335,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070942,
+    "ts": 1793451363049,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf.errorCode",
     "acl": {
       "object": 1636,
@@ -2358,7 +2358,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070963,
+    "ts": 1793451363093,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf.firmware",
     "acl": {
       "object": 1636,
@@ -2381,7 +2381,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070953,
+    "ts": 1793451363068,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf.hasError",
     "acl": {
       "object": 1636,
@@ -2404,7 +2404,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070931,
+    "ts": 1793451363038,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf.online",
     "acl": {
       "object": 1636,
@@ -2428,7 +2428,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305070973,
+    "ts": 1793451363109,
     "_id": "salus.0.wiringCenters.001e5e0909044aaf.rssi",
     "acl": {
       "object": 1636,
@@ -2456,7 +2456,7 @@
     },
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071233,
+    "ts": 1793537748456,
     "_id": "salus.0.wiringCenters.001e5e0909044c04",
     "acl": {
       "object": 1636,
@@ -2476,7 +2476,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071257,
+    "ts": 1793451319232,
     "_id": "salus.0.wiringCenters.001e5e0909044c04.errorCode",
     "acl": {
       "object": 1636,
@@ -2499,7 +2499,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071278,
+    "ts": 1793451319244,
     "_id": "salus.0.wiringCenters.001e5e0909044c04.firmware",
     "acl": {
       "object": 1636,
@@ -2522,7 +2522,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071268,
+    "ts": 1793451319238,
     "_id": "salus.0.wiringCenters.001e5e0909044c04.hasError",
     "acl": {
       "object": 1636,
@@ -2545,7 +2545,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071240,
+    "ts": 1793451319225,
     "_id": "salus.0.wiringCenters.001e5e0909044c04.online",
     "acl": {
       "object": 1636,
@@ -2569,7 +2569,7 @@
     "native": {},
     "from": "system.adapter.salus.0",
     "user": "system.user.admin",
-    "ts": 1793305071289,
+    "ts": 1793451319251,
     "_id": "salus.0.wiringCenters.001e5e0909044c04.rssi",
     "acl": {
       "object": 1636,
