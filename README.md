@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.8 (2026-11-13)
+* (2K-Darkness) Sync package-lock.json with updated testing dependency for clean CI builds
+
 ### 0.1.7 (2026-11-13)
 * (2K-Darkness) Address review findings: use adapter setTimeout/clearTimeout, remove EUID from info log, remove unused setSwitch, update testing dependency and workflow check action
 

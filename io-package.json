@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "news": {
+      "0.1.8": {
+        "en": "Sync package-lock.json with updated testing dependency for clean CI builds",
+        "de": "Synchronisierung der package-lock.json mit aktualisierter Test-Abhängigkeit für saubere CI-Builds",
+        "ru": "Синхронизация package-lock.json с обновленной зависимостью тестирования для чистых сборок CI",
+        "pt": "Sincronização do package-lock.json com dependência de teste atualizada para compilações CI limpas",
+        "nl": "Synchronisatie van package-lock.json met bijgewerkte testafhankelijkheid voor schone CI-builds",
+        "fr": "Synchronisation de package-lock.json avec la dépendance de test mise à jour pour des builds CI propres",
+        "it": "Sincronizzazione di package-lock.json con la dipendenza di test aggiornata per build CI pulite",
+        "es": "Sincronización de package-lock.json con la dependencia de prueba actualizada para compilaciones de CI limpias",
+        "pl": "Synchronizacja package-lock.json ze zaktualizowaną zależnością testową dla czystych kompilacji CI",
+        "uk": "Синхронізація package-lock.json з оновленою тестовою залежністю для чистих збірок CI",
+        "zh-cn": "同步 package-lock.json 与更新的测试依赖项以实现干净的 CI 构建"
+      },
       "0.1.7": {
         "en": "Address review findings: use adapter setTimeout/clearTimeout, remove EUID from info log, remove unused setSwitch, update testing dependency and workflow check action",
         "de": "Review-Feedback umgesetzt: adapter.setTimeout/clearTimeout verwendet, EUID aus Info-Log entfernt, ungenutztes setSwitch entfernt, Test-Abhängigkeit und Workflow-Aktion aktualisiert",

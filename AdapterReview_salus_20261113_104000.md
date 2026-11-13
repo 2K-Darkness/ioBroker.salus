@@ -1,7 +1,7 @@
 **Report generated:** 2026-11-13 10:40:00
 **Adapter:** ioBroker.salus
-**Version reviewed:** 0.1.7
-**Repository:** https://github.com/2K-Darkness/ioBroker.salus (tag v0.1.7)
+**Version reviewed:** 0.1.8
+**Repository:** https://github.com/2K-Darkness/ioBroker.salus (tag v0.1.8)
 **Previous review:** AdapterReview_salus_20261112_151500.md
 **Checklist version:** ioBroker Adapter Checklist V3.5
 **Skill version:** 1.16.0
