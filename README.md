@@ -96,6 +96,9 @@ Because this adapter follows official ioBroker roles:
 
 ## Changelog
 
+### 0.1.9 (2026-11-14)
+* (2K-Darkness) Prune old news entries and remove unpublished 0.1.7 for repository builder compliance
+
 ### 0.1.8 (2026-11-13)
 * (2K-Darkness) Sync package-lock.json with updated testing dependency for clean CI builds
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "salus",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "news": {
+      "0.1.9": {
+        "en": "Repository builder compliance: prune old news entries and remove unpublished 0.1.7",
+        "de": "Repository-Builder-Konformität: News-Bereich aufgeräumt und unveröffentlichte 0.1.7 entfernt",
+        "ru": "Соответствие сборщику репозитория: очистка раздела новостей и удаление неопубликованной версии 0.1.7",
+        "pt": "Conformidade com o construtor do repositório: limpar seção de novidades e remover 0.1.7 não publicado",
+        "nl": "Repository-builder-naleving: nieuwsoverzicht opgeschoond en niet-gepubliceerde 0.1.7 verwijderd",
+        "fr": "Conformité du constructeur de référentiel : nettoyage de la section actualités et suppression de 0.1.7 non publié",
+        "it": "Conformità del generatore di repository: ripulita la sezione notizie e rimossa la 0.1.7 non pubblicata",
+        "es": "Conformidad con el creador del repositorio: se limpió la sección de noticias y se eliminó la versión no publicada 0.1.7",
+        "pl": "Zgodność z kreatorem repozytorium: oczyszczenie sekcji aktualności i usunięcie nieopublikowanej wersji 0.1.7",
+        "uk": "Відповідність конструктору репозиторію: очищення розділу новин та видалення неопублікованої 0.1.7",
+        "zh-cn": "存储库构建器合规性：清理新闻部分并删除未发布的 0.1.7"
+      },
       "0.1.8": {
         "en": "Sync package-lock.json with updated testing dependency for clean CI builds",
         "de": "Synchronisierung der package-lock.json mit aktualisierter Test-Abhängigkeit für saubere CI-Builds",
@@ -15,19 +28,6 @@
         "pl": "Synchronizacja package-lock.json ze zaktualizowaną zależnością testową dla czystych kompilacji CI",
         "uk": "Синхронізація package-lock.json з оновленою тестовою залежністю для чистих збірок CI",
         "zh-cn": "同步 package-lock.json 与更新的测试依赖项以实现干净的 CI 构建"
-      },
-      "0.1.7": {
-        "en": "Address review findings: use adapter setTimeout/clearTimeout, remove EUID from info log, remove unused setSwitch, update testing dependency and workflow check action",
-        "de": "Review-Feedback umgesetzt: adapter.setTimeout/clearTimeout verwendet, EUID aus Info-Log entfernt, ungenutztes setSwitch entfernt, Test-Abhängigkeit und Workflow-Aktion aktualisiert",
-        "ru": "Учтены замечания проверки: использование adapter.setTimeout/clearTimeout, удаление EUID из логов info, удаление неиспользуемого setSwitch, обновление тестовых зависимостей и действий рабочего процесса",
-        "pt": "Abordados os resultados da revisão: usar adapter.setTimeout/clearTimeout, remover EUID do log de informações, remover setSwitch não utilizado, atualizar dependência de teste e ação de verificação do fluxo de trabalho",
-        "nl": "Review-bevindingen verwerkt: adapter.setTimeout/clearTimeout gebruikt, EUID verwijderd uit info-logboek, ongebruikte setSwitch verwijderd, testafhankelijkheid en workflow-actie bijgewerkt",
-        "fr": "Traitement des remarques de révision : utilisation de adapter.setTimeout/clearTimeout, suppression de l'EUID des journaux d'info, suppression de setSwitch inutilisé, mise à jour des dépendances de test et de l'action de workflow",
-        "it": "Risolti i rilievi della revisione: uso di adapter.setTimeout/clearTimeout, rimozione di EUID dai log di info, rimozione di setSwitch inutilizzato, aggiornamento delle dipendenze di test e azione del flusso di lavoro",
-        "es": "Se corrigieron los hallazgos de la revisión: uso de adapter.setTimeout/clearTimeout, eliminación de EUID del registro de información, eliminación de setSwitch no utilizado, actualización de dependencias de prueba y acción de flujo de trabajo",
-        "pl": "Uwzględniono uwagi z recenzji: użycie adapter.setTimeout/clearTimeout, usunięcie EUID z logów info, usunięcie nieużywanego setSwitch, aktualizacja zależności testowych i akcji workflow",
-        "uk": "Враховано зауваження перевірки: використання adapter.setTimeout/clearTimeout, видалення EUID з логів info, видалення невикористаного setSwitch, оновлення тестових залежностей та дій робочого процесу",
-        "zh-cn": "解决审查发现的问题：使用 adapter.setTimeout/clearTimeout、从 info 日志中移除 EUID、移除未使用的 setSwitch、更新测试依赖项和工作流检查操作"
       },
       "0.1.6": {
         "en": "Code compliance and review optimizations (compact mode, object ID sanitization, adapter-core update, documentation refinements)",
@@ -67,58 +67,6 @@
         "pl": "Dodano obiekty folderów dla kategorii urządzeń i dostosowano rolę stanu RSSI do value.rssi",
         "uk": "Додано об'єкти папок для категорій пристроїв та скориговано роль стану RSSI на value.rssi",
         "zh-cn": "添加了设备类别的文件夹对象并将 RSSI 状态角色与 value.rssi 对齐"
-      },
-      "0.1.3": {
-        "en": "Automated release with package provenance via GitHub Actions",
-        "de": "Automatisiertes Release mit Paket-Provenienz über GitHub Actions",
-        "ru": "Автоматический выпуск с подтверждением происхождения пакета через GitHub Actions",
-        "pt": "Lançamento automatizado com proveniência do pacote via GitHub Actions",
-        "nl": "Geautomatiseerde release met pakketherkomst via GitHub Actions",
-        "fr": "Version automatisée avec provenance du package via GitHub Actions",
-        "it": "Versione automatizzata con provenienza del pacchetto tramite GitHub Actions",
-        "es": "Lanzamiento automatizado con procedencia del paquete a través de GitHub Actions",
-        "pl": "Zautomatyzowane wydanie ze sprawdzonym pochodzeniem pakietu przez GitHub Actions",
-        "uk": "Автоматичний випуск із перевіреним походженням пакета через GitHub Actions",
-        "zh-cn": "通过 GitHub Actions 发布的带有包来源验证的自动化版本"
-      },
-      "0.1.2": {
-        "en": "CI/CD testing pipeline update and package validation",
-        "de": "Aktualisierung der CI/CD-Testing-Pipeline und Paketvalidierung",
-        "ru": "Обновление конвейера тестирования CI/CD и валидация пакета",
-        "pt": "Atualização do pipeline de teste CI/CD e validação de pacote",
-        "nl": "Update van CI/CD-testpipeline en pakketvalidatie",
-        "fr": "Mise à jour du pipeline de test CI/CD et validation du package",
-        "it": "Aggiornamento della pipeline di test CI/CD e convalida del pacchetto",
-        "es": "Actualización de la canalización de pruebas CI/CD y validación del paquete",
-        "pl": "Aktualizacja potoku testowania CI/CD i walidacja pakietu",
-        "uk": "Оновлення конвеєра тестування CI/CD та валідація пакета",
-        "zh-cn": "CI/CD 测试流程更新和包验证"
-      },
-      "0.1.1": {
-        "en": "Repository compliance update (Node.js 22, admin translations, js-controller and admin dependencies)",
-        "de": "Repository-Konformitätsupdate (Node.js 22, Admin-Übersetzungen, js-controller- und Admin-Abhängigkeiten)",
-        "ru": "Обновление соответствия репозиторию (Node.js 22, переводы, зависимости js-controller и admin)",
-        "pt": "Atualização de conformidade do repositório (Node.js 22, traduções, dependências js-controller e admin)",
-        "nl": "Update van repository-naleving (Node.js 22, vertalingen, js-controller- en admin-afhankelijkheden)",
-        "fr": "Mise à jour de conformité du référentiel (Node.js 22, traductions, dépendances js-controller et admin)",
-        "it": "Aggiornamento della conformità del repository (Node.js 22, traduzioni, dipendenze js-controller e admin)",
-        "es": "Actualización de conformidad del repositorio (Node.js 22, traducciones, dependencias js-controller y admin)",
-        "pl": "Aktualizacja zgodności z repozytorium (Node.js 22, tłumaczenia, zależności js-controller i admin)",
-        "uk": "Оновлення відповідності репозиторію (Node.js 22, переклади, залежності js-controller та admin)",
-        "zh-cn": "存储库合规性更新（Node.js 22、翻译、js-controller 和 admin 依赖项）"
-      },
-      "0.1.0": {
-        "en": "Initial release with full read and write support for SQ610 thermostats, it600WC wiring centers, and UGE600 gateway",
-        "de": "Erstveröffentlichung mit voller Lese- und Schreibunterstützung für SQ610-Thermostate, it600WC-Klemmleisten und das UGE600 Gateway",
-        "ru": "Первоначальный выпуск с полной поддержкой чтения и записи для термостатов SQ610, центров коммутации it600WC и шлюза UGE600",
-        "pt": "Lançamento inicial com suporte total de leitura e gravação para termostatos SQ610, centros de fiação it600WC e gateway UGE600",
-        "nl": "Eerste release met volledige lees- en schrijfondersteuning voor SQ610-thermostaten, it600WC-bedradingscentra en UGE600-gateway",
-        "fr": "Version initiale avec prise en charge complète de la lecture et de l'écriture pour les thermostats SQ610, les centres de câblage it600WC et la passerelle UGE600",
-        "it": "Versione iniziale con supporto completo di lettura e scrittura per termostati SQ610, centri di cablaggio it600WC e gateway UGE600",
-        "es": "Versión inicial con soporte completo de lectura y escritura para termostatos SQ610, centros de cableado it600WC y puerta de enlace UGE600",
-        "pl": "Wersja początkowa z pełną obsługą odczytu i zapisu dla termostatów SQ610, listew sterujących it600WC i bramki UGE600",
-        "uk": "Початковий випуск із повною підтримкою читання та запису для термостатів SQ610, комутаційних центрів it600WC та шлюзу UGE600",
-        "zh-cn": "初始版本，完全支持 SQ610 温控器、it600WC 接线盒和 UGE600 网关的读取和写入"
       }
     },
     "titleLang": {
